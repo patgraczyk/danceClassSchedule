@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <script src="js/app.js"></script>
+  <title>Dance Library </title>
+</head>
+<body>
+
+  <h1 id="main-header">Submit a new class:</h1>
+
+  <form id="form-main" action="index.html" method="post" required>
+    <label> Time </label>
+    <input type="time" name="time" id="time"  min="9:00" max="20:00" required>  </br>
+
+    <label> Dance Class Name </label>
+    <input type="text" name="danceName" id="danceName" required> </br>
+
+    <label> Duration </label>
+    <input type="number" name="Duration" id="duration" min="1"></br>
+
+    <label for="year">Name of Instructor</label>
+    <input type="text" name="instructor" id="instructor" required> </br>
+
+    <label for="dance-family">Dance Family</label>
+    <select id="danceFamily" name="danceFamily" id="danceFamily">
+      <option value=""disabledselected></option>
+      <option value="balroom">Ballroom</option>
+      <option value="classical">Classical</option>
+      <option value="contemporary">Contemporary</option>
+      <option value="latin">Latin</option>
+      <option value="swing">Swing</option>
+    </select> </br></br>
+
+    <legend id="level"> Level </br>
+      <input type="radio" name="level" id="level1">
+      <label for="level1"> beginner </label>
+      <input type="radio" name="level" id="level2">
+      <label for="level2"> intermediate </label>
+      <input type="radio" name="level" id="level3">
+      <label for="level3"> advanced </label> </br>
+    </legend> </br>
+
+    Upload an icon: <input type="file" name="myFile"></br>
+
+    <input type="submit" value="save">
+
+  </select>
+</form> </br>
+
+
+<h2 id="dance-schedule">Dance Class Schedule</h2>
+<p>These dance classes will be displayed on the school's website. Please contact admin if you want to edit any of the classes.</p>
+<table id="dance-list">
+
+
+</table>
+
+<button id="delete"> Delete all entires </button>
+<button id="colorToggle"> Change Color </button>
+
+
+<div class ="sort">
+  <button id="see-by-time">Classes In Order</button>
+</div>
+
+<h3> User Login </h3>
+<form action="index.html">
+  User name:<br>
+  <input type="text" name="userid">
+  <br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+.someclass{
+  font-size: 1.5 rem;
+  color: bule
+}
+
+/*  var tag = document.querySelector('#id')
+tag.classList.add('someclass')
+*/
+
+.purple{
+  background-color: purple;
+}
+
+input[type=text] {
+    width: 70%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8rem
+}
+input[type=date] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8rem
+}
+
+input[type=number] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8rem
+}
+input[type=checkbox] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8rem
+}
+
+input[type=submit] {
+    width: 10%;
+    height: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8rem
+}
+
+select {
+    width: 20%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 1rem
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+  table-layout: fixed;
+}
+
+tr {
+  text-align: left;
+  word-wrap:break-word;
+}
+
+td, th {
+  text-align: left;
+  margin: 10px;
+
+}
+
+td {
+  padding: 10px 20px 0px 0px;
+}
+
+th {
+  padding: 0px 20px 10px 0px;
+  border-bottom: 1px solid papayawhip;
+  word-wrap:break-word;
+}
