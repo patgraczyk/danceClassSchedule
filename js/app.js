@@ -21,26 +21,55 @@ document.addEventListener('DOMContentLoaded', () => {
   const imageController = document.querySelector('#on-mouse-down');
   imageController.addEventListener('onmousedown', handleImage);
 
+  const handleScoreBallet = document.querySelector('#d1');
+  handleScoreBallet.addEventListener('click', handleBallet);
+
+  const handleScoreContemporary = document.querySelector('#d2');
+  handleScoreContemporary.addEventListener('click', handleContemporary);
+
+  const handleScoreHipHop = document.querySelector('#d3');
+  handleScoreHipHop.addEventListener('click', handleHipHop);
+
 });
 // End of the DOM content loaded
 
+const handleBallet = function(event){
+  let d1Score = 0;
+  let endScore = 10;
+  if (d1Score < endScore) {
+    d1Score++;
+    d1Display.textContent = d1Score;
+  }
+}
+
+const handleContemporary = function(event){
+  let d2Score = 0;
+  let endScore = 10;
+  if (d2Score < endScore) {
+    d2Score++;
+  }
+  d2Display.textContent = d2Score;
+}
+
+const handleHipHop = function(event){
+  let d3Score = 0;
+  let endScore = 10;
+  if (d3Score < endScore) {
+    d3Score++;
+  }
+  d3Display.textContent = d3Score;
+}
+
+
 const handleImage = function(event) {
-  event.target.style.color = "red";
+  document.classList.add('purple');
+  // document.getElementById('myimage').src = "ballerina.gif";
     // onmouseup(function(){
     //       event.target.style.color = "blue";
+    //     document.getElementById('myimage').src = "ballerina2.gif";
+
     // });
 };
-
-
-// function lighton() {
-//     document.getElementById('myimage').src = "bulbon.gif";
-// }
-// function lightoff() {
-//     document.getElementById('myimage').src = "bulboff.gif";
-// }
-
-
-
 
 const handleColorChange = function(event){
   var isPurple = false;
@@ -101,15 +130,14 @@ const createNewDanceClass= function(newItem) {
 
   const level = document.createElement('p')
   const allLevels = getRadioButtonValue(event.target);
-  level.textContent = allLevels.value;
+  level.textContent = `${allLevels.value}`;
   newListItem.appendChild(level);
 
 
-  // document.querySelector('input[name="gender"]:checked').value
 
   return newListItem;
 }
-
+// document.querySelector('input[name="level"]:checked').value
 const getRadioButtonValue = function(event) {
   const allLevels = document.getElementsByName('level')
   let selectedButton;

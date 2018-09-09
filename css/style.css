@@ -7,6 +7,10 @@ body {
   color: bule
 }
 
+.onMouseDonw{
+  color: purple;
+}
+
 /*  var tag = document.querySelector('#id')
 tag.classList.add('someclass')
 */
