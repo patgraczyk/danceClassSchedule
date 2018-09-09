@@ -18,8 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const dateController = document.querySelector("#show-date");
   dateController.addEventListener('click', handleDate);
 
+  const imageController = document.querySelector('#on-mouse-down');
+  imageController.addEventListener('onmousedown', handleImage);
+
 });
 // End of the DOM content loaded
+
+const handleImage = function(event) {
+  event.target.style.color = "red";
+    // onmouseup(function(){
+    //       event.target.style.color = "blue";
+    // });
+};
+
+
+// function lighton() {
+//     document.getElementById('myimage').src = "bulbon.gif";
+// }
+// function lightoff() {
+//     document.getElementById('myimage').src = "bulboff.gif";
+// }
+
+
+
 
 const handleColorChange = function(event){
   var isPurple = false;
@@ -103,19 +124,19 @@ const getRadioButtonValue = function(event) {
 const handleDeleteForm = function(event) {
   const danceDisplay = document.querySelector('#dance-list');
   while (danceDisplay.hasChildNodes()){
-  danceDisplay.removeChild(danceDisplay.lastChild);
-  alert('All your entries will be deleted');
+    danceDisplay.removeChild(danceDisplay.lastChild);
+    alert('All your entries will be deleted');
 
-}
-
-const handleSelectingItems = function(event){
-  let allLis = document.querySelectorAll("li");
-  for (let i =0; i < allLis.length; i++){
-    allLis[i].addEventListener('click', function(){
-      this.style.color = "purple"
-    });
   }
-}
+
+  const handleSelectingItems = function(event){
+    let allLis = document.querySelectorAll("li");
+    for (let i =0; i < allLis.length; i++){
+      allLis[i].addEventListener('click', function(){
+        this.style.color = "purple"
+      });
+    }
+  }
 
 
 
@@ -123,7 +144,7 @@ const handleSelectingItems = function(event){
 
 
 
-// background color changer
+  // background color changer
 
 
 }
