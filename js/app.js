@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const backgroundController = document.querySelector("#colorToggle");
   backgroundController.addEventListener('click', handleColorChange);
 
+  const dateController = document.querySelector("#show-date");
+  dateController.addEventListener('click', handleDate);
+
 });
 // End of the DOM content loaded
 
@@ -23,6 +26,9 @@ const handleColorChange = function(event){
   document.body.classList.toggle("purple");
 };
 
+const handleDate = function(event){
+  event.target.innerHTML = Date();
+}
 
 const handleHoverEffect = function(event) {
   event.target.style.color = "pink";
